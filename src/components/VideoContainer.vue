@@ -13,7 +13,7 @@ const props = defineProps({
 const videoStore = useVideo()
 const vid = ref()
 
-const { playing, rate, muted, currentTime, duration } = useMediaControls(vid, {
+const { playing, rate, muted, currentTime, duration, waiting, seeking } = useMediaControls(vid, {
   src: props.src
 })
 
@@ -59,7 +59,11 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="relative w-full h-full">
+  <div class="relative w-full h-full flex items-center justify-center bg-neutral-500">
+    <div
+      v-if="waiting || seeking"
+      class="w-1/4 aspect-square h-auto rounded-full border-4 absolute border-transparent border-t-white animate-spin"
+    ></div>
     <video
       ref="vid"
       class="w-full h-full object-cover object-center video-js"

@@ -75,7 +75,7 @@ onMounted(() => {
         <div>
           <label class="flex items-center gap-2">
             <input type="checkbox" v-model="videoStore.autoNext" class="w-4 h-4" />
-            <span class="text-white">Автоматическое переключение видео</span>
+            <span class="text-white">Автоматты ауыстыру</span>
           </label>
         </div>
       </div>
