@@ -69,6 +69,7 @@ onMounted(() => {
               <option value="1">1x</option>
               <option value="1.5">1.5x</option>
               <option value="2">2x</option>
+              <option value="5">5x</option>
             </select>
           </label>
         </div>

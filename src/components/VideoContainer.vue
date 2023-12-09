@@ -18,6 +18,8 @@ const { playing, rate, muted, currentTime, duration, waiting, seeking } = useMed
 })
 
 onMounted(() => {
+  rate.value = videoStore.rate
+  muted.value = videoStore.muted
   if (videoStore.autoNext) {
     playing.value = videoStore.isPlay
   }

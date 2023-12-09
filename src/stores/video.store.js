@@ -8,17 +8,21 @@ const useVideo = defineStore('video', {
     muted: false,
     locations: [
       {
-        title: 'Универсам',
-        src: '/v1.mp4'
+        title: 'Арай (1)',
+        src: '/3.MOV'
       },
       {
-        title: 'Арай',
-        src: '/v2.mp4'
+        title: 'Арай (2)',
+        src: '/2.MOV'
       },
       {
-        title: 'Левый берег',
-        src: '/v3.mp4'
-      }
+        title: 'Арай (3)',
+        src: '/1.MOV'
+      },
+      {
+        title: 'Арай (4)',
+        src: '/4.MOV'
+      },
     ],
     autoNext: false,
     currentTime: 0,
