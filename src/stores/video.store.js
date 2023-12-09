@@ -34,6 +34,10 @@ const useVideo = defineStore('video', {
       {
         title: 'Орталық (3)',
         src: '/7.MOV'
+      },
+      {
+        title: 'Орталық (4)',
+        src: '/8.MOV'
       }
     ],
     autoNext: false,
